@@ -24,14 +24,25 @@ nav label:active {
   position: absolute;
   z-index: 10;
   width: 100%;
-  left: -75%;
-  top: 3rem;
+  left: -100%;
+  top: 5rem;
   transition: all 0.5s;
   text-align: left;
+
+  @include mediaQ(tablet) {
+    width: 100%;
+    position: relative;
+    left: 0;
+  }
 }
 
 .navMenu li {
   margin: 5% 10% 5%;
+
+  @include mediaQ(tablet) {
+    float: left;
+    margin: 1%;
+  }
 }
 
 
@@ -58,6 +69,10 @@ input[type="checkbox"] {
   display: none;
 }
 
+nav label,
+#hamburger {
 
-
-
+  @include mediaQ(tablet) {
+    display: none;
+  }
+}

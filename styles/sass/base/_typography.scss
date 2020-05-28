@@ -13,6 +13,12 @@ h2 {
   color: white;
 }
 
+p {
+  font-family: 'Roboto Slab', serif;
+  font-size: createVW($bodyFontSize);
+  color: white;
+}
+
 .navMenu a {
   font-family: 'Roboto Slab', serif;
   font-size: createREM($navFontSize);
