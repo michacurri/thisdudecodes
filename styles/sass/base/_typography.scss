@@ -1,0 +1,28 @@
+
+
+h1 {
+  font-family: 'Anonymous Pro', monospace;
+  font-size: createVW($h1FontSize);
+  color: white;
+  
+}
+
+h2 {
+  font-family: 'Roboto Slab', serif;
+  font-size: createREM($h2FontSize);
+  color: white;
+}
+
+.navMenu a {
+  font-family: 'Roboto Slab', serif;
+  font-size: createREM($navFontSize);
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+}
+
+label,
+input {
+  color: white;
+  font-size: createREM($labelFontSize);
+}

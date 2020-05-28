@@ -1,0 +1,104 @@
+@mixin innerWrapper {
+  width: 90%;
+  max-width: ($maxWidth * 1px);
+  height: 100%;
+  margin: 0 auto;
+}
+
+@mixin headerSettings {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: scroll;
+  height: 100%;
+  width: 100%;
+}
+
+@mixin relative {
+  position: relative;
+}
+
+@mixin flex {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+@mixin rowReverse {
+  flex-direction: row-reverse;
+}
+
+@mixin flexColumn {
+  flex-direction: column;
+}
+
+@mixin centerCenter {
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin justStart {
+  justify-content: flex-start;
+}
+
+@mixin justCenter {
+  justify-content: center;
+}
+
+@mixin justEnd {
+  justify-content: flex-end;
+}
+
+@mixin dmb {
+  justify-content: space-between;
+}
+
+@mixin alignStart {
+  align-items: flex-start;
+}
+
+@mixin alignCenter {
+  align-items: center;
+}
+
+@mixin alignEnd {
+  align-items: flex-end;
+}
+
+@mixin alignSelfStart {
+  align-self: flex-start;
+}
+
+@mixin alignSelfCenter {
+  align-self: center;
+}
+
+@mixin alignSelfEnd {
+  align-self: flex-end;
+}
+
+@mixin noOverflow {
+  max-height: 4rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin mobileMedia {
+  @media(min-width: 768px){
+    nav label,
+    #hamburger {
+      display: none;
+    }
+    
+    .navMenu {
+      width: 100%;
+      position: relative;
+      left: 0;
+    }
+    
+    .navMenu li {
+      float: left;
+      margin: 1%;
+    }
+  };
+}

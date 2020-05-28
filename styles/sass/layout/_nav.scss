@@ -1,0 +1,63 @@
+nav label {
+  position: absolute;
+  float: right;
+  top: 0;
+  right: 0;
+  padding: 5%;
+}
+
+nav label:hover,
+nav label:focus {
+  color: white;
+  cursor: pointer;
+}
+
+nav label:active {
+  position: absolute;
+  float: right;
+  top: 0;
+  right: 0;
+}
+
+.navMenu {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  left: -75%;
+  top: 3rem;
+  transition: all 0.5s;
+  text-align: left;
+}
+
+.navMenu li {
+  margin: 5% 10% 5%;
+}
+
+
+.navMenu a {
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+}
+
+.navMenu a:hover,
+.navMenu a:focus {
+  border-bottom: 2px solid grey;
+}
+
+.navMenu a:active {
+  position: relative;
+  top: 2px;
+}
+
+input[type="checkbox"]:checked+.navMenu {
+  left: 0;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+
+
+

@@ -1,0 +1,75 @@
+body {
+  background: black;
+}
+
+// class attributes
+.headerSettings {
+  @include headerSettings;
+}
+
+.relative {
+  @include relative();
+}
+
+.flex {
+  @include flex();
+}
+
+.rowReverse {
+  @include rowReverse();
+}
+
+.flexColumn {
+  @include flexColumn();
+}
+
+.centerCenter {
+  @include centerCenter();
+}
+
+.justStart {
+  @include justStart();
+}
+
+.justCenter {
+  @include justCenter();
+}
+
+.justEnd {
+  @include justEnd();
+}
+
+.dmb {
+  @include dmb();
+}
+
+.alignStart {
+  @include alignStart();
+}
+
+.alignCenter {
+  @include alignCenter();
+}
+
+.alignEnd {
+  @include alignEnd();
+}
+
+
+.alignSelfStart {
+  @include alignSelfStart();
+}
+
+.alignSelfCenter {
+  @include alignSelfCenter();
+}
+
+.alignSelfEnd {
+  @include alignSelfEnd();
+}
+
+// media queries
+
+.mobileMedia {
+  @include mobileMedia();
+}
