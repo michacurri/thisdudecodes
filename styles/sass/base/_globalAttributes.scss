@@ -68,8 +68,3 @@ body {
   @include alignSelfEnd();
 }
 
-// media queries
-
-.mobileMedia {
-  @include mobileMedia();
-}

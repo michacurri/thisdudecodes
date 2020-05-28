@@ -107,22 +107,6 @@ body {
       align-self: flex-end;
 }
 
-@media (min-width: 768px) {
-  .mobileMedia nav label,
-  .mobileMedia #hamburger {
-    display: none;
-  }
-  .mobileMedia .navMenu {
-    width: 100%;
-    position: relative;
-    left: 0;
-  }
-  .mobileMedia .navMenu li {
-    float: left;
-    margin: 1%;
-  }
-}
-
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -386,6 +370,12 @@ h2 {
   color: white;
 }
 
+p {
+  font-family: 'Roboto Slab', serif;
+  font-size: 2vw;
+  color: white;
+}
+
 .navMenu a {
   font-family: 'Roboto Slab', serif;
   font-size: 2.4rem;
@@ -426,15 +416,30 @@ nav label:active {
   position: absolute;
   z-index: 10;
   width: 100%;
-  left: -75%;
-  top: 3rem;
+  left: -100%;
+  top: 5rem;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   text-align: left;
 }
 
+@media only screen and (min-width: 769px) {
+  .navMenu {
+    width: 100%;
+    position: relative;
+    left: 0;
+  }
+}
+
 .navMenu li {
   margin: 5% 10% 5%;
+}
+
+@media only screen and (min-width: 769px) {
+  .navMenu li {
+    float: left;
+    margin: 1%;
+  }
 }
 
 .navMenu a {
@@ -460,6 +465,13 @@ input[type="checkbox"] {
   display: none;
 }
 
+@media only screen and (min-width: 769px) {
+  nav label,
+  #hamburger {
+    display: none;
+  }
+}
+
 header {
   height: 40vh;
   max-height: 45vh;
@@ -481,4 +493,14 @@ header h1 {
   display: -ms-flexbox;
   display: flex;
   padding-top: 5vh;
+}
+
+.landingMain {
+  height: 55vh;
+  width: 100%;
+}
+
+footer {
+  height: 5vh;
+  width: 100%;
 }

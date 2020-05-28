@@ -1,3 +1,15 @@
+// media queries
+
+@mixin mediaQ($media) {
+  @if $media == mobile {
+    @media only screen and (max-width: 768px) { @content; }
+  } @else if $media == tablet {
+    @media only screen and (min-width: 769px) { @content; }
+  } @else if $media == fullscreen {
+    @media only screen and (min-width: 1200px) { @content; }
+  }
+}
+
 @mixin innerWrapper {
   width: 90%;
   max-width: ($maxWidth * 1px);
@@ -83,22 +95,3 @@
   text-overflow: ellipsis;
 }
 
-@mixin mobileMedia {
-  @media(min-width: 768px){
-    nav label,
-    #hamburger {
-      display: none;
-    }
-    
-    .navMenu {
-      width: 100%;
-      position: relative;
-      left: 0;
-    }
-    
-    .navMenu li {
-      float: left;
-      margin: 1%;
-    }
-  };
-}
