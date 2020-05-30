@@ -25,10 +25,20 @@ p {
   text-decoration: none;
   text-transform: capitalize;
   color: white;
+
+
 }
 
 label,
 input {
   color: white;
   font-size: createREM($labelFontSize);
+}
+
+@include mediaQ(tablet) {
+
+  h2          { font-size: createREM($h2FontSize * 0.6); }
+  .navMenu a  { font-size: createREM($navFontSize * 0.6); }
+  p           { font-size: createREM($bodyFontSize * 0.6); }
+  footer p    { font-size: createREM($bodyFontSize * 0.3); }
 }

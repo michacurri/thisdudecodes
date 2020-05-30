@@ -12,9 +12,18 @@ header {
   background-position: bottom left;
 
 
-  h1 {
+  .titleH1 {
+    width: 100%;
+    height: 100%;
     display: flex;
-    padding-top: 5vh;
+    justify-content: center;
+    padding-top: 7vh;
+
+    @include mediaQ(tablet) {
+      justify-content: flex-end;
+      margin: 0 3%;
+      padding-top: 5vh
+    }
   }
 
 }

@@ -390,6 +390,32 @@ input {
   font-size: 2.4rem;
 }
 
+@media only screen and (min-width: 769px) {
+  h2 {
+    font-size: 1.92rem;
+  }
+  .navMenu a {
+    font-size: 1.44rem;
+  }
+  p {
+    font-size: 1.44rem;
+  }
+  footer p {
+    font-size: 0.72rem;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 3%;
+    height: 10%;
+    width: 100%;
+  }
+}
+
 nav label {
   position: absolute;
   float: right;
@@ -412,12 +438,15 @@ nav label:active {
 }
 
 .navMenu {
-  display: block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: absolute;
   z-index: 10;
-  width: 100%;
+  width: 80vw;
   left: -100%;
-  top: 5rem;
+  top: 1rem;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   text-align: left;
@@ -425,20 +454,39 @@ nav label:active {
 
 @media only screen and (min-width: 769px) {
   .navMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 100%;
     position: relative;
     left: 0;
+    top: 0;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .navMenu .social {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
 }
 
 .navMenu li {
-  margin: 5% 10% 5%;
+  margin: 3% 5%;
 }
 
 @media only screen and (min-width: 769px) {
   .navMenu li {
     float: left;
-    margin: 1%;
+    margin: 0 2%;
   }
 }
 
@@ -488,11 +536,26 @@ header {
   background-position: bottom left;
 }
 
-header h1 {
+header .titleH1 {
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 5vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 7vh;
+}
+
+@media only screen and (min-width: 769px) {
+  header .titleH1 {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin: 0 3%;
+    padding-top: 5vh;
+  }
 }
 
 .landingMain {
