@@ -1,3 +1,15 @@
+nav {
+
+  @include mediaQ(tablet) {
+    display: flex;
+    // justify-content: space-between;
+    margin: 3%;
+    height: 10%;
+    width: 100%;
+  }
+}
+
+
 nav label {
   position: absolute;
   float: right;
@@ -20,30 +32,41 @@ nav label:active {
 }
 
 .navMenu {
-  display: block;
+  flex-direction: column;
   position: absolute;
   z-index: 10;
-  width: 100%;
+  width: 80vw;
   left: -100%;
-  top: 5rem;
+  top: 1rem;
   transition: all 0.5s;
   text-align: left;
 
   @include mediaQ(tablet) {
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-between;
     width: 100%;
     position: relative;
     left: 0;
+    top: 0;
+  }
+
+  .social {
+    @include mediaQ(tablet) {
+      justify-content: flex-end;
+    }
   }
 }
 
 .navMenu li {
-  margin: 5% 10% 5%;
+  margin: 3% 5%;
 
   @include mediaQ(tablet) {
     float: left;
-    margin: 1%;
+    margin: 0 2%;
   }
 }
+
 
 
 .navMenu a {
