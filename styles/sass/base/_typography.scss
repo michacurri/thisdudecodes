@@ -1,21 +1,12 @@
-
-
 h1 {
   font-family: 'Anonymous Pro', monospace;
   font-size: createVW($h1FontSize);
   color: white;
-  
 }
 
 h2 {
   font-family: 'Roboto Slab', serif;
   font-size: createREM($h2FontSize);
-  color: white;
-}
-
-p {
-  font-family: 'Roboto Slab', serif;
-  font-size: createVW($bodyFontSize);
   color: white;
 }
 
@@ -25,8 +16,6 @@ p {
   text-decoration: none;
   text-transform: capitalize;
   color: white;
-
-
 }
 
 label,
@@ -35,10 +24,21 @@ input {
   font-size: createREM($labelFontSize);
 }
 
+p {
+  font-family: 'Roboto Slab', serif;
+  font-size: createVW($bodyFontSize);
+  color: white;
+}
+
+footer p {
+  font-size: createREM($bodyFontSize * 0.35);
+}
+
+
 @include mediaQ(tablet) {
 
-  h2          { font-size: createREM($h2FontSize * 0.6); }
-  .navMenu a  { font-size: createREM($navFontSize * 0.6); }
-  p           { font-size: createREM($bodyFontSize * 0.6); }
-  footer p    { font-size: createREM($bodyFontSize * 0.3); }
+  h2 {font-size: createREM($h2FontSize * 0.4);}
+  .navMenu a {font-size: createREM($navFontSize * 0.6);}
+  p {font-size: createREM($bodyFontSize * 0.6);}
+  footer p {font-size: createREM($bodyFontSize * 0.4);}
 }
