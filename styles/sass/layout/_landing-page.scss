@@ -17,12 +17,12 @@ header {
     height: 100%;
     display: flex;
     justify-content: center;
-    padding-top: 7vh;
+    padding-top: 10vh;
 
     @include mediaQ(tablet) {
       justify-content: flex-end;
       margin: 0 3%;
-      padding-top: 5vh
+      padding-top: 4vh
     }
   }
 
