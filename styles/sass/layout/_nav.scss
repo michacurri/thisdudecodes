@@ -1,11 +1,24 @@
-#fullNav .navMenu {
+// fullscreen navigation hidden in mobile view
+.headerNavSocialBar {
+  // #fullNav .navMenu 
   display: none;
 
+  // fullscreen nav engaged
   @include mediaQ(tablet) {
     display: flex;
     margin: 3%;
     height: 10%;
-    width: 100%;
+    width: calc((100% * 0.4) - 1%);
+  }
+}
+
+.socialIcons {
+  bottom: 0;
+  right: 0;
+  margin: 2%; 
+
+  li {
+    padding: 40% 0;
   }
 }
 
@@ -16,17 +29,20 @@
   }
 }
 
+// slideout contains nav and social
 .slideOut {
+  background: black;
   position: absolute;
   z-index: 10;
-  width: 80vw;
-  left: -80vw;
-  top: 1rem;
+  width: 100vw;
+  left: -100vw;
+  top: 4rem;
   transition: all 0.5s;
   text-align: left;
 }
 
-.mainSection label {
+// label trigger for slideout
+.sectionNavSocialSlider label {
   position: absolute;
   float: right;
   top: 0;
@@ -34,19 +50,20 @@
   padding: 5%;
 }
 
-.mainSection label:hover,
-.mainSection label:focus {
+.sectionNavSocialSlider label:hover,
+.sectionNavSocialSlider label:focus {
   color: white;
   cursor: pointer;
 }
 
-.mainSection label:active {
+.sectionNavSocialSlider label:active {
   position: absolute;
   float: right;
   top: 0;
   right: 0;
 }
 
+// navigation positioning
 .navMenu {
   flex-direction: column;
 
@@ -59,21 +76,27 @@
     left: 0;
     top: 0;
   }
+}
 
+.slideOut {
   .social {
+    width: 80vw;
+    height: calc((100 / 2) - 1%);
+
     @include mediaQ(tablet) {
-      justify-content: flex-end;
+      display: none;
     }
   }
 }
 
-.navMenu li {
-  margin: 2% 5%;
+.navMenu li,
+.social li {
+  margin: 3% 2%;
 
-  @include mediaQ(tablet) {
-    float: left;
-    margin: 0 2%;
-  }
+  // @include mediaQ(tablet) {
+  //   float: left;
+  //   margin: 0 2%;
+  // }
 }
 
 .navMenu a {
@@ -91,7 +114,7 @@
   top: 2px;
 }
 
-input[type="checkbox"]:checked ~ .slideOut {
+input[type="checkbox"]:checked~.slideOut {
   left: 0;
 }
 
@@ -99,10 +122,13 @@ input[type="checkbox"] {
   display: none;
 }
 
-.mainSection label,
+.sectionNavSocialSlider label,
 #hamburger {
 
   @include mediaQ(tablet) {
     display: none;
   }
 }
+
+
+// social icons

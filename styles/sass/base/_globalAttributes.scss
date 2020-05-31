@@ -2,13 +2,22 @@ body {
   background: black;
 }
 
+.innerWrapper {
+  @include innerWrapper();
+}
+
+
 // class attributes
 .headerSettings {
-  @include headerSettings;
+  @include headerSettings();
 }
 
 .relative {
   @include relative();
+}
+
+.absolute {
+  @include absolute();
 }
 
 .flex {
