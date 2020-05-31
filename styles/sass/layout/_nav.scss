@@ -1,14 +1,21 @@
-nav {
+.headerMenu {
+  display: none;
 
   @include mediaQ(tablet) {
     display: flex;
-    // justify-content: space-between;
     margin: 3%;
     height: 10%;
     width: 100%;
   }
 }
 
+
+.mobileMenu {
+
+  @include mediaQ(tablet) {
+    display: none;
+  }
+}
 
 nav label {
   position: absolute;
@@ -43,7 +50,7 @@ nav label:active {
 
   @include mediaQ(tablet) {
     display: flex;
-    flex-direction: row;  
+    flex-direction: row;
     justify-content: space-between;
     width: 100%;
     position: relative;
@@ -59,15 +66,13 @@ nav label:active {
 }
 
 .navMenu li {
-  margin: 3% 5%;
+  margin: 2% 5%;
 
   @include mediaQ(tablet) {
     float: left;
     margin: 0 2%;
   }
 }
-
-
 
 .navMenu a {
   display: inline-block;

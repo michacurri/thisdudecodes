@@ -36,7 +36,7 @@ footer p {
 
 
 @include mediaQ(tablet) {
-
+  h1 {font-size: createVW($h1FontSize * 0.8);}
   h2 {font-size: createREM($h2FontSize * 0.4);}
   .navMenu a {font-size: createREM($navFontSize * 0.6);}
   p {font-size: createREM($bodyFontSize * 0.6);}

@@ -1,22 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>thisdude.codes | Portfolio</title>
   <link rel="stylesheet" href="../../styles/style.css">
 </head>
+
 <body>
   <header>
     <div class="titleH1">
       <h1>thisDude = {'codes'}</h1>
     </div>
-  </header>
-  <section class="relative flex">
     <nav>
+      <ul class="navMenu headerMenu flex">
+        <li><a href="../../index.html">home</a></li>
+        <li><a href="../../#">About</a></li>
+        <!-- <li><a href="#">blog</a></li> -->
+        <li><a href="#">portfolio</a></li>
+        <li><a href="mailto:mike@thisdude.codes">Contact</a></li>
+        <ul class="social flex">
+          <li><a href="https://github.com/michacurri" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/mkcurrie/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="https://twitter.com/thisdudecodes" target="_blank"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="landingMain relative flex">
+    <nav class="mobileMenu">
       <label for="hamburger">&#9776;</label>
       <input type="checkbox" id="hamburger" />
-      <ul class="navMenu flex clearfix">
+      <ul class="navMenu flex">
         <li><a href="../../index.html">home</a></li>
         <li><a href="../../#">About</a></li>
         <!-- <li><a href="#">blog</a></li> -->
@@ -30,25 +47,21 @@
       </ul>
     </nav>
   </section>
+  
   <main>
-
     <section>
       <h2>Project One</h2>
       <p>For our first bootcamp project we were assigned a one-page PSD conversion.</p>
       <p>The rules and regulation specified it must be mobile and desktop friendly.</p>
       <a href="./project-one/index.html">Project One</a>
     </section>
-
-    <a href="./project-one/index.html">Project One</a>
-
   </main>
+
   <footer>
     <div class="flex centerCenter">
       <p>thisdude.codes &copy; Michael Currie 2020</p>
     </div>
   </footer>
-
-
 
 </body>
 </html>
