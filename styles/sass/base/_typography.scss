@@ -10,8 +10,7 @@ h2 {
   color: white;
 }
 
-.navMenu a,
-i {
+.navMenu a {
   font-family: 'Roboto Slab', serif;
   font-size: createREM($navFontSize);
   text-decoration: none;
@@ -23,12 +22,38 @@ label,
 input {
   color: white;
   font-size: createREM($labelFontSize);
+
+  &:hover {
+    color: #00A7E1
+  }
+
+  &:active {
+    color: #003459;
+  }
 }
 
 p {
   font-family: 'Roboto Slab', serif;
   font-size: createREM($bodyFontSize);
   color: white;
+  margin: 4% 0;
+}
+
+a,
+i {  
+  font-family: 'Roboto Slab', serif;
+  font-size: createREM($aTagFontSize);
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+
+  &:hover {
+    color: #00A7E1
+  }
+
+  &:active {
+    color: #003459;
+  }
 }
 
 footer p {
@@ -39,7 +64,14 @@ footer p {
 @include mediaQ(tablet) {
   h1 {font-size: createVW($h1FontSize * 0.7);}
   h2 {font-size: createVW($h2FontSize * 0.4);}
-  .navMenu a, i {font-size: createREM($navFontSize * 0.6);}
-  p {font-size: createREM($bodyFontSize * 0.6);}
+  .navMenu a, i {font-size: createREM($navFontSize * 0.5);}
+  p {font-size: createREM($bodyFontSize * 0.7);}
+  a {font-size: createREM($aTagFontSize * 0.8);}
   footer p {font-size: createREM($bodyFontSize * 0.4);}
+}
+
+@include mediaQ(fullscreen) {
+  .navMenu a, i {font-size: createREM($navFontSize * 0.6);}
+  p {font-size: createREM($bodyFontSize * 0.8);}
+
 }

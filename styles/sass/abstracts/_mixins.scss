@@ -6,7 +6,7 @@
   } @else if $media == tablet {
     @media only screen and (min-width: 769px) { @content; }
   } @else if $media == fullscreen {
-    @media only screen and (min-width: 1200px) { @content; }
+    @media only screen and (min-width: 900px) { @content; }
   }
 }
 
