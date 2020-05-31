@@ -10,31 +10,33 @@
 </head>
 
 <body>
-  <header>
+  <header class="relative">
     <div class="titleH1">
       <h1>thisDude = ['codes']</h1>
     </div>
-    <nav id="fullNav">
-      <ul class="navMenu flex">
-        <li><a href="../../index.html">home</a></li>
-        <li><a href="../../#">About</a></li>
-        <!-- <li><a href="#">blog</a></li> -->
-        <li><a href="./pages/portfolio/portfolio.html">portfolio</a></li>
-        <li><a href="mailto:mike@thisdude.codes">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="socialIcons">
-      <ul class="social flex">
+    <div class="headerNavSocialBar">
+      <nav id="fullNav">
+        <ul class="navMenu flex">
+          <li><a href="#">home</a></li>
+          <li><a href="../../#">About</a></li>
+          <!-- <li><a href="#">blog</a></li> -->
+          <li><a href="./pages/portfolio/portfolio.html">portfolio</a></li>
+          <li><a href="mailto:mike@thisdude.codes">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="socialIcons absolute">
+      <ul class="social flex flexColumn">
         <li><a href="https://github.com/michacurri" target="_blank"><i class="fab fa-github"></i></a></li>
         <li><a href="https://www.linkedin.com/in/mkcurrie/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
         <li><a href="https://twitter.com/thisdudecodes" target="_blank"><i class="fab fa-twitter"></i></a></li>
       </ul>
     </div>
   </header>
-  <section class="mainSection relative flex">
+  <section class="sectionNavSocialSlider relative flex">
     <label for="hamburger">&#9776;</label>
     <input type="checkbox" id="hamburger" />
-    <div class="slideOut flex">
+    <div class="slideOut flex flexColumn">
       <nav class="mobileNav">
         <ul class="navMenu flex">
           <li><a href="#">home</a></li>
@@ -51,6 +53,14 @@
       </ul>
     </div>
   </section>
+  <main>
+    <div class="innerWrapper">
+      <h2>Hey there</h2>
+      <p>welcome to thisDude.codes!</p>
+      <p>Learn more about who I am and check out my portfolio as I move through Juno College's Spring 2020 Front End
+        Bootcamp.</p>
+    </div>
+  </main>
   <footer>
     <div class="flex centerCenter">
       <p>thisdude.codes &copy; Michael Currie 2020</p>

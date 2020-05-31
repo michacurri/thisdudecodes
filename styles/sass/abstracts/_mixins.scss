@@ -29,6 +29,10 @@
   position: relative;
 }
 
+@mixin absolute {
+  position: absolute;
+}
+
 @mixin flex {
   display: flex;
   flex-direction: row;
