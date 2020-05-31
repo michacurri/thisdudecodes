@@ -360,19 +360,13 @@ li {
 
 h1 {
   font-family: 'Anonymous Pro', monospace;
-  font-size: 5.83333vw;
+  font-size: 7.5vw;
   color: white;
 }
 
 h2 {
   font-family: 'Roboto Slab', serif;
   font-size: 3.2rem;
-  color: white;
-}
-
-p {
-  font-family: 'Roboto Slab', serif;
-  font-size: 2vw;
   color: white;
 }
 
@@ -390,9 +384,19 @@ input {
   font-size: 2.4rem;
 }
 
+p {
+  font-family: 'Roboto Slab', serif;
+  font-size: 2vw;
+  color: white;
+}
+
+footer p {
+  font-size: 0.84rem;
+}
+
 @media only screen and (min-width: 769px) {
   h2 {
-    font-size: 1.92rem;
+    font-size: 1.28rem;
   }
   .navMenu a {
     font-size: 1.44rem;
@@ -401,7 +405,7 @@ input {
     font-size: 1.44rem;
   }
   footer p {
-    font-size: 0.72rem;
+    font-size: 0.96rem;
   }
 }
 
@@ -545,7 +549,7 @@ header .titleH1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 7vh;
+  padding-top: 10vh;
 }
 
 @media only screen and (min-width: 769px) {
@@ -554,7 +558,7 @@ header .titleH1 {
         -ms-flex-pack: end;
             justify-content: flex-end;
     margin: 0 3%;
-    padding-top: 5vh;
+    padding-top: 4vh;
   }
 }
 
