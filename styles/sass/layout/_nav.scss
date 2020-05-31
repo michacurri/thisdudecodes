@@ -1,4 +1,4 @@
-.headerMenu {
+#fullNav .navMenu {
   display: none;
 
   @include mediaQ(tablet) {
@@ -9,15 +9,24 @@
   }
 }
 
-
-.mobileMenu {
+.mobileNav .navMenu {
 
   @include mediaQ(tablet) {
     display: none;
   }
 }
 
-nav label {
+.slideOut {
+  position: absolute;
+  z-index: 10;
+  width: 80vw;
+  left: -80vw;
+  top: 1rem;
+  transition: all 0.5s;
+  text-align: left;
+}
+
+.mainSection label {
   position: absolute;
   float: right;
   top: 0;
@@ -25,13 +34,13 @@ nav label {
   padding: 5%;
 }
 
-nav label:hover,
-nav label:focus {
+.mainSection label:hover,
+.mainSection label:focus {
   color: white;
   cursor: pointer;
 }
 
-nav label:active {
+.mainSection label:active {
   position: absolute;
   float: right;
   top: 0;
@@ -40,13 +49,6 @@ nav label:active {
 
 .navMenu {
   flex-direction: column;
-  position: absolute;
-  z-index: 10;
-  width: 80vw;
-  left: -100%;
-  top: 1rem;
-  transition: all 0.5s;
-  text-align: left;
 
   @include mediaQ(tablet) {
     display: flex;
@@ -89,7 +91,7 @@ nav label:active {
   top: 2px;
 }
 
-input[type="checkbox"]:checked+.navMenu {
+input[type="checkbox"]:checked ~ .slideOut {
   left: 0;
 }
 
@@ -97,7 +99,7 @@ input[type="checkbox"] {
   display: none;
 }
 
-nav label,
+.mainSection label,
 #hamburger {
 
   @include mediaQ(tablet) {

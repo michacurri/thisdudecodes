@@ -412,12 +412,12 @@ footer p {
   }
 }
 
-.headerMenu {
+#fullNav .navMenu {
   display: none;
 }
 
 @media only screen and (min-width: 769px) {
-  .headerMenu {
+  #fullNav .navMenu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -428,12 +428,23 @@ footer p {
 }
 
 @media only screen and (min-width: 769px) {
-  .mobileMenu {
+  .mobileNav .navMenu {
     display: none;
   }
 }
 
-nav label {
+.slideOut {
+  position: absolute;
+  z-index: 10;
+  width: 80vw;
+  left: -80vw;
+  top: 1rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  text-align: left;
+}
+
+.mainSection label {
   position: absolute;
   float: right;
   top: 0;
@@ -441,13 +452,13 @@ nav label {
   padding: 5%;
 }
 
-nav label:hover,
-nav label:focus {
+.mainSection label:hover,
+.mainSection label:focus {
   color: white;
   cursor: pointer;
 }
 
-nav label:active {
+.mainSection label:active {
   position: absolute;
   float: right;
   top: 0;
@@ -459,14 +470,6 @@ nav label:active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: absolute;
-  z-index: 10;
-  width: 80vw;
-  left: -100%;
-  top: 1rem;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  text-align: left;
 }
 
 @media only screen and (min-width: 769px) {
@@ -522,7 +525,7 @@ nav label:active {
   top: 2px;
 }
 
-input[type="checkbox"]:checked + .navMenu {
+input[type="checkbox"]:checked ~ .slideOut {
   left: 0;
 }
 
@@ -531,7 +534,7 @@ input[type="checkbox"] {
 }
 
 @media only screen and (min-width: 769px) {
-  nav label,
+  .mainSection label,
   #hamburger {
     display: none;
   }
@@ -580,7 +583,7 @@ header {
   }
 }
 
-.landingMain {
+.mainSection {
   height: 55vh;
   width: 100%;
 }
