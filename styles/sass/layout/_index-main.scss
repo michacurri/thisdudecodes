@@ -1,3 +1,51 @@
+.blogWrapper {
+  width: 100%;
+  padding: 2%;
+}
+
+figure {
+  width: 100%;
+  margin: 1%;
+  height: 100%;
+
+  @include mediaQ(tablet) {
+    width: calc(100% / 2 - 4%);
+  }
+}
+
+img {
+  width: 100%;
+}
+
+.imgBlock {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @include mediaQ(tablet) {
+    flex-direction: row;
+  }
+}
+
+.codeBlock figure {
+  width: 100%;
+  margin: 1%;
+  height: 100%;
+  margin: 5% 0;
+}
+
+ol li {
+  list-style: decimal;
+}
+
+pre,
+code {
+  width: 90vw;
+  max-width: 1200px;
+  color: white;
+  overflow: scroll;
+}
+
 header {
   height: 35vh;
   display: flex;
@@ -21,9 +69,9 @@ header {
 
   @include mediaQ(tablet) {
     width: calc((100% * 0.5) - 1%);
-    justify-content: flex-end;
-    margin: 0 2%;
-    padding-top: 4vh
+    justify-content: flex-start;
+    margin: 0px 8%;
+    padding-top: 4vh;
   }
 }
 
@@ -48,6 +96,18 @@ main {
       margin: 2%;
     }
   }
+}
+
+.portfolioFlexContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.projectContainer {
+  margin: 0 2%;
+  width: calc((100% / 2) - 4%);
 }
 
 footer {

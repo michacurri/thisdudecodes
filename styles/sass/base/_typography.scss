@@ -2,12 +2,35 @@ h1 {
   font-family: 'Anonymous Pro', monospace;
   font-size: createVW($h1FontSize);
   color: white;
+  margin: 5% 0;
 }
 
 h2 {
   font-family: 'Roboto Slab', serif;
   font-size: createVW($h2FontSize);
   color: white;
+  margin: 5% 0;
+}
+
+h3 {
+  font-family: 'Anonymous Pro', monospace;
+  font-size: createVW($h3FontSize);
+  color: white;
+  margin: 5% 0;
+}
+
+h4 {
+  font-family: 'Roboto Slab', serif;
+  font-size: createVW($h4FontSize);
+  color: white;
+  margin: 5% 0;
+}
+
+h5 {
+  font-family: 'Roboto Slab', serif;
+  font-size: createVW($h5FontSize);
+  color: white;
+  margin: 5% 0;
 }
 
 .navMenu a {
@@ -56,8 +79,23 @@ i {
   }
 }
 
+li {
+  font-family: 'Roboto Slab', serif;
+  font-size: createREM($bodyFontSize);
+  color: white;
+  margin: 4% 0;
+  list-style: none;
+}
+
 footer p {
   font-size: createREM($bodyFontSize * 0.5);
+}
+
+figcaption {
+  font-family: 'Anonymous Pro', monospace;
+  font-size: createREM($captionFontSize);
+  color: lightgray;
+  font-weight: 300;
 }
 
 
